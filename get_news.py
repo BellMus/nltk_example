@@ -31,7 +31,7 @@ def search_on_google(param):
     time.sleep(2)
     ## date ##
     driver.find_element_by_xpath("//div[@class='goog-select _oB goog-inline-block goog-flat-menu-button'][@id='as_qdr_button']").click()
-    driver.find_element_by_css_selector("[value='y']").click() #d = dat w =week  m=mounth y=year all=any time
+    driver.find_element_by_css_selector("[value='d']").click() #d = dat w =week  m=mounth y=year all=any time
     time.sleep(2)
     ##input##
     driver.find_element_by_xpath("//input[@class='jfk-button jfk-button-action _JQ']").click()
@@ -61,5 +61,5 @@ def search_on_google(param):
         pass
 
 
-search_on_google("evreka")
+search_on_google("Kemal Kılıçdaroğlu")
 
